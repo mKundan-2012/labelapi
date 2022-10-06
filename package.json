@@ -1,0 +1,51 @@
+{
+  "name": "data-gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:localhost": "clear && nodemon src/app.js --presets babel-preset-env",
+    "start": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.14.17"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.6.7",
+    "@opentelemetry/api": "^1.0.4",
+    "@opentelemetry/auto-instrumentations-node": "^0.27.3",
+    "@opentelemetry/exporter-jaeger": "^1.0.1",
+    "@opentelemetry/instrumentation": "^0.27.0",
+    "@opentelemetry/instrumentation-http": "^0.27.0",
+    "@opentelemetry/resources": "^1.0.1",
+    "@opentelemetry/sdk-node": "^0.27.0",
+    "@opentelemetry/sdk-trace-base": "^1.0.1",
+    "@opentelemetry/sdk-trace-node": "^1.0.1",
+    "@opentelemetry/semantic-conventions": "^1.0.1",
+    "async": "^3.2.3",
+    "axios": "^0.26.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.14.2",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.16",
+    "sequelize": "^6.21.3",
+    "sqlite3": "^5.0.8",
+    "swagger-jsdoc": "5.0.1",
+    "swagger-ui-express": "^4.4.0",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
